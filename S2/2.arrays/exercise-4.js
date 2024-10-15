@@ -1,6 +1,6 @@
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
 
-rickAndMortyCharacters.push("Morty");
-rickAndMortyCharacters.push("Summer");
+rickAndMortyCharacters.push("Morty", "Summer");
 
-console.log(rickAndMortyCharacters[4]);
+let arrayLength = rickAndMortyCharacters.length;
+console.log(rickAndMortyCharacters[arrayLength - 1]);
