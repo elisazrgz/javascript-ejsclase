@@ -1,9 +1,9 @@
 let ballers = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
 
 function swap(array, index1, index2) {
-    let temp = array[index1];
+    let container = array[index1];
     array[index1] = array[index2];
-    array[index2] = temp;
+    array[index2] = container;
     return array;
     }
 

@@ -29,8 +29,14 @@ const users = [
     },
 ];
 
+let totalVolume = 0;
+let soundsCounter = 0;
 for (let user of users) {
-    let averageVolume = 0;
-    (user.favoritesSounds.volume += averageVolume) / user.favoritesSounds.length;
-    console.log(averageVolume)
+    for (let soundKey in user.favoritesSounds) {
+        let sound = user.favoritesSounds[soundKey];
+        totalVolume += sound.volume;
+        soundsCounter++;
+    }
 }
+
+console.log(totalVolume / soundsCounter)

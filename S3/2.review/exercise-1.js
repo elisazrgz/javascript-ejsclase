@@ -7,12 +7,13 @@ const movies = [
 
 let categoryList = [];
 for (let movie of movies) {
-    if (!categoryList.includes(movie.categories)) {
-        categoryList.push(movie.categories);
+    for (let category of movie.categories) {
+        if (!categoryList.includes(category)){
+        categoryList.push(category);
+        }
     }
 }
 
 console.log(categoryList)
 
-// no sé cómo acceder a los elementos individuales de los arrays
-// de categorias si con for of no tengo índices
+// PARA ACCEDER A LOS ELEMENTOS DEL ARRAY DENTRO DEL OBJETO HACEMOS UN BUCLE DENTRO DE OTRO PARA ITERAR ESE ARRAY

@@ -9,8 +9,12 @@ function removeItem(array, text) {
             break;
         }
     }
+    // esto último es para arreglar un posible fallo:
+    if (index > -1) {
     array.splice(index, 1);
+    
     return array;
+    }
 }
 
 console.log(removeItem(animals, "Mosquito"))
