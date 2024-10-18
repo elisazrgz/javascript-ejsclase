@@ -10,6 +10,9 @@ function findArrayIndex(array, text) {
         }
     }
     return index;
+    
+    // SI NO QUIERO PROGRAMAR YO LA FUNCIÓN TAMBIÉN VALE CON:
+    // return array.indexOf(text);
 }
 
 console.log(findArrayIndex(animals, "Mosquito"))
